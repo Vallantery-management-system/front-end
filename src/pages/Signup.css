@@ -1,0 +1,17 @@
+#signUp {
+    position: absolute;
+    top: 15px;
+    
+}
+
+.form {
+    position: fixed;
+    width: 310px;
+    height: 486px;
+    top: 40%;
+    left: 50%;
+    margin: -130px 0 0 -150px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.13);
+    border-radius: 26px;
+}
