@@ -65,7 +65,7 @@ export const Login = () => {
                 <Link id = 'forgot'>Forgot password?</Link>
                 <button className='button' type = "submit">Continue</button>
             </form>
-            <p className='signup'>New User? <Link to = '/signup' id='signup'>Sign up</Link></p>
+            <h5 className='signup'>New User? <Link to = '/signup' id='signup'>Sign up</Link></h5>
             </div>
             <p className='copyright'>Copyright Ⓒ 2022 VMS. All rights deserved</p>
        </div>
