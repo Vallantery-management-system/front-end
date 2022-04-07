@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import {useHistory, Link} from 'react-router-dom';
 import './Login.css';
-
 export const Login = () => {
 
     const history = useHistory();
@@ -9,20 +8,29 @@ export const Login = () => {
     const [passw, setPassw] = useState("");
     const [wrong, setWrong] = useState(false);
     const users = [
-      { //database chka :)
+      {
         username: "12345",
         password: "qwerty",
-        id: 1
+        id: 1,
+        name: "harut",
+        surname: "harutyunyan",
+        phone: "055555555"
       },
       {
         username: "barev",
         password: "dzez",
-        id: 2
+        id: 2,
+        name: "ayo",
+        surname: "voch",
+        phone: "099999999"
       },
       {
         username: "ok",
         password: "ok",
-        id: 3
+        id: 3,
+        name: "yes",
+        surname: "no",
+        phone: "077777777"
       }
     ];
 
@@ -40,7 +48,7 @@ export const Login = () => {
             } else {
               history.push('/profile');
             }
-          }
+          } 
         }
 
     return (
@@ -62,10 +70,10 @@ export const Login = () => {
                 setPassw(e.target.value);
                 }}/>
                 {wrong && <p id='wrong'>Wrong username or password</p>}
-                <Link id = 'forgot'>Forgot password?</Link>
+                <Link to = '/forgot' id = 'forgot'>Forgot password?</Link>
                 <button className='button' type = "submit">Continue</button>
             </form>
-            <h5 className='signup'>New User? <Link to = '/signup' id='signup'>Sign up</Link></h5>
+            <p className='signup'>New User? <Link to = '/signup' id='signup'>Sign up</Link></p>
             </div>
             <p className='copyright'>Copyright Ⓒ 2022 VMS. All rights deserved</p>
        </div>

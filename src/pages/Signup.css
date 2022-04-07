@@ -1,6 +1,6 @@
 #signUp {
     position: absolute;
-    top: 5px;
+    top: 0.5px;
     left: 94px;
     font-size: 36px;
     font-style: normal;
@@ -9,7 +9,7 @@
 
 #start{
     position: absolute;
-    top: 68px;
+    top: 63px;
     left: 85px;
     color: #767676;
     font-style: normal;
@@ -21,8 +21,8 @@
 .form {
     position: fixed;
     width: 317px;
-    height: 510px;
-    top: 36%;
+    height: 555px;
+    top: 31%;
     left: 50%;
     margin: -130px 0 0 -150px;
     background: #FFFFFF;
@@ -50,24 +50,33 @@ option{
 
 #input1 {
     position: absolute;
-    top: 140px;
+    top: 133px;
 }
 
 #input2 {
     position: absolute;
-    top: 201px;
+    top: 194px;
 }
 
 #input3 {
     position: absolute;
-    top: 262px;
+    top: 255px;
 }
 
 #input4 {
     position: absolute;
-    top: 323px;
+    top: 316px;
 }
 
+#input5{
+    position: absolute;
+    top: 377px;
+}
+
+#input6{
+    position: absolute;
+    top: 438px;
+}  
 .input {
     position: absolute;
     left: 41px;
@@ -83,7 +92,7 @@ option{
     width: 100px;
     cursor: pointer;
     position: absolute;
-    top: 442px;
+    top: 494px;
     left: 110px;
 }
 
