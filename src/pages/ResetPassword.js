@@ -3,7 +3,11 @@ import { useHistory } from "react-router-dom";
 import { useState } from "react";
 import './ForgotPassw.css';
 
-export const ForgotPassw = () => {
+//TODO make a request to the backend to checkng the password
+//if success redirect to login page
+// endpoint POST:/auth/reset
+
+export const ResetPassword = () => {
 
     const history = useHistory();
     const [login, setLogin] = useState("");
@@ -16,7 +20,7 @@ export const ForgotPassw = () => {
         e.preventDefault();
         // if (true){
         //     history.push('/profile');
-        // }   
+        // }
     }
 
     return (
@@ -34,9 +38,6 @@ export const ForgotPassw = () => {
                 <input required type = "mail" id = 'input 1' placeholder = 'Username' value = {login} onChange = {(e) => {
                 setLogin(e.target.value);
                 } }/>
-                <input required type = "Phone" id = 'input 2' placeholder = 'Phone' value = {phone} onChange= {(e) => {
-                setPhone(e.target.value);
-                }}/>
                 <input required type = "New Password"  id = 'input 3' placeholder = 'New Password' value = {newpassw} onChange= {(e) => {
                 setNewpassw(e.target.value);
                 }}/>

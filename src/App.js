@@ -6,6 +6,7 @@ import { Login } from './pages/Login';
 import { Profile } from './pages/Profile';
 import { SignUp } from './pages/Signup';
 import { ForgotPassw } from './pages/ForgotPassw';
+import {ResetPassword} from "./pages/ResetPassword";
 
 export function App() {
   return (
@@ -28,6 +29,9 @@ export function App() {
         </Route>
         <Route path="/forgot">
             <ForgotPassw/>
+        </Route>
+        <Route path="/reset">
+            <ResetPassword/>
         </Route>
     </Switch>
     </div>

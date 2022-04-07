@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import './Signup.css';
 
-export const SignUp = () => {
+//TODO implement request fot sign up
+// endpoint POST:/auth/signup
 
+export const SignUp = () => {
     const [name, setName] = useState("");
     const [surname, setSurname] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState();
     const [city, setCity] = useState();
     const [password, setPassword] = useState();
-    
+
     return (
         <div>
         <img className='img' src='/Images/Capture.jpg' alt=''/>
