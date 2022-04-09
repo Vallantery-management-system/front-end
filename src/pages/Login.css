@@ -201,3 +201,10 @@ input[type = 'mail']{
     color: #d83434;
     text-shadow: 3xp 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
+
+@media screen and (min-width: 300px){
+    .r3{
+        color: green;
+
+    }
+}

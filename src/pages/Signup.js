@@ -1,8 +1,22 @@
 import React, { useState } from 'react';
 import './Signup.css';
+import {useHistory} from 'react-router-dom';
+import axios from 'axios';
 
 //TODO implement request fot sign up
 // endpoint POST:/auth/signup
+
+const BACKEND_URL = 'https://vms-ayb.herokuapp.com'
+const userSignupRequest = async (email, password) => {
+    try {
+        const response = await axios.post(`${BACKEND_URL}/auth/signup`, {email, password})
+        const access_token = response.data.access_token
+        localStorage.setItem('token', access_token)
+        return true
+    } catch (e) {
+        return false
+    }
+}
 
 export const SignUp = () => {
     const [name, setName] = useState("");
@@ -11,6 +25,19 @@ export const SignUp = () => {
     const [phone, setPhone] = useState();
     const [city, setCity] = useState();
     const [password, setPassword] = useState();
+    const history = useHistory();
+
+
+    const Signup = async (event) => {
+            event.preventDefault();
+            const isSignedupSuccess = await userSignupRequest(email, password);
+            if (isSignedupSuccess) {
+                history.push('/profile');
+            }
+            if (!isSignedupSuccess) {
+                console.error("Something went wrong");
+            }
+    }
 
     return (
         <div>
@@ -24,7 +51,7 @@ export const SignUp = () => {
         <div className='form'>
         <h2 id='signUp'>Sign Up</h2>
         <h4 id='start'>Start your journey</h4>
-            <form /*onSubmit = {Submit}*/>
+            <form onSubmit = {Signup}>
                 <input required className = 'input' value = {name} id='input1' type='text' placeholder='Name' onChange={(e) => {
                     setName(e.target.value);
                 }}/>

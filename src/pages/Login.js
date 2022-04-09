@@ -8,9 +8,7 @@ const BACKEND_URL = 'https://vms-ayb.herokuapp.com'
 const userLoginRequest = async (email, password) => {
     try {
         const response = await axios.post(`${BACKEND_URL}/auth/login`, {email, password})
-
         const access_token = response.data.access_token
-
         localStorage.setItem('token', access_token)
 
         return true
@@ -24,32 +22,32 @@ export const Login = () => {
     const [login, setLogin] = useState("");
     const [passw, setPassw] = useState("");
     const [wrong, setWrong] = useState(false);
-    const users = [
-        {
-            username: "12345",
-            password: "qwerty",
-            id: 1,
-            name: "harut",
-            surname: "harutyunyan",
-            phone: "055555555"
-        },
-        {
-            username: "barev",
-            password: "dzez",
-            id: 2,
-            name: "ayo",
-            surname: "voch",
-            phone: "099999999"
-        },
-        {
-            username: "ok",
-            password: "ok",
-            id: 3,
-            name: "yes",
-            surname: "no",
-            phone: "077777777"
-        }
-    ];
+    // const users = [
+    //     {
+    //         username: "12345",
+    //         password: "qwerty",
+    //         id: 1,
+    //         name: "harut",
+    //         surname: "harutyunyan",
+    //         phone: "055555555"
+    //     },
+    //     {
+    //         username: "barev",
+    //         password: "dzez",
+    //         id: 2,
+    //         name: "ayo",
+    //         surname: "voch",
+    //         phone: "099999999"
+    //     },
+    //     {
+    //         username: "ok",
+    //         password: "ok",
+    //         id: 3,
+    //         name: "yes",
+    //         surname: "no",
+    //         phone: "077777777"
+    //     }
+    // ];
 
     const LogIn = async (event) => {
         if (login !== "" && passw !== "") {

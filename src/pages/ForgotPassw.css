@@ -1,13 +1,24 @@
 .div2 {
     position: absolute;
     width: 300px;
-    height: 390px;
+    height: 280px;
     z-index: 15;
-    top: 37%;
+    top: 45%;
     left: 50%;
     margin: -100px 0 0 -150px;
     background: rgb(252, 252, 252);
     box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2), 2px 2px 15px 1px rgba(0, 0, 0, 0.19);
     border-radius: 7%;
     text-align: center;
+}
+
+.button2 {
+    background-color: #5dc4e4;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    height: 38px;
+    width: 100px;
+    cursor: pointer;
 }
