@@ -1,12 +1,7 @@
-<<<<<<< HEAD
 import React, {useState, useEffect} from 'react'
-import Header from '../components/header/header'
-=======
-import React, {useState} from 'react'
 import {useHistory, Link} from 'react-router-dom';
 import './Login.css';
 import axios from 'axios'
->>>>>>> 859622600dfc5c45b5ebc4fb039812ae1bd85c96
 
 const BACKEND_URL = 'https://vms-ayb.herokuapp.com'
 

@@ -1,15 +1,15 @@
 import React from 'react';
 import '../styles/App.css';
-import lines from './images/lines.png';
-import backlines from './images/backlines.png';
-import Navbar from './components/Navbar/Navbar.js';
-import Description from './components/description/description.js';
-import Signins from './components/signins/signins.js';
-import Vacancies from './components/recent-vacancies/vacancies.js'
-import Pricings from './components/pricings/pricing';
-import Footer from './components/footer/footer.js';
+import lines from '../images/lines.png';
+import backlines from '../images/backlines.png';
+import Navbar from '../components/Navbar/Navbar.js';
+import Description from '../components/description/description.js';
+import Signins from '../components/signins/signins.js';
+import Vacancies from '../components/recent-vacancies/vacancies.js'
+import Pricings from '../components/pricings/pricing';
+import Footer from '../components/footer/footer.js';
 
-function Landing() {
+export const Landing = () => {
   return (
       <div className="App">
         <Navbar ></Navbar>
@@ -47,8 +47,6 @@ function Landing() {
       </div>
   );
 }
-export default Landing;
-
 
 
 
