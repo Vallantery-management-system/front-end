@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+*{
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.backlines{
+  height:             467px;
+  margin-bottom:      -150px;
+  z-index:            1;
+}
+
+.centered-text{
+  font-size:          30px;
+  font-weight:        bold;
+  margin:             50px;
+  width:              70%;
+}
+
+h1{
+  align-items:        center;
+  color:            #818181;
+  font-weight:        bold;
+  margin-top:             42px;
+}
+
+i{
+  color:             #68BED9;
+  font-family:        'Montserrat', sans-serif;
+
+}
+
+.info{
+  font-family:        'Montserrat', sans-serif;
+  font-size:          36px;
+  line-height:        44px;
+  text-align:         left;
+  width:              60%;
+  color:            #4A4A4A
+}
+
+.lines{
+  height:             467px;
+  margin-left:        5%;
+  margin-top:         6%;
+}
+
+.we-give-volunteers{
+  font-size: 50.1px;
+  display: flex;
+  justify-content: center;
+  color:#818181;
+}
+
+/*for computers*/
+
+@media only screen and (max-width: 970px) {
+  .backlines, .lines{
+    height:           400px;
+    margin-top:       20%;
+  }
+}
+/*for tablets*/
+
+@media only screen and (max-width: 520px) {
+  .backlines, .lines{
+    height:           300px;
+  }
+  .we-give-volunteers{
+    font-size: 35px;
+  }
+}
+/*for phones*/
+@media only screen and (max-width: 224px) {
+  .backlines, .lines{
+    height:             140px;
+    display: flex;
+    justify-content:center;
+  }
+
+  .info, i{
+    font-size: 20px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,49 @@
+.footer-container{
+    height:295px;
+    background-color: #006C8E;
+    color:white;
+    padding-top: 50px;
+    box-shadow:4px rgba(0, 0, 0, 0.25);
+
+}
+
+.social-media-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.contacts{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon{
+    height: 20px;
+    margin:20px
+}
+
+hr{
+    border: #0084AE 1px solid;
+}
+
+@media only screen and (max-width: 970px) {
+    .footer-container{
+        margin-top:1700px;
+    }
+} 
+
+
+.volunteer, .company{
+      width: 90%;
+      padding-top: 90px;
+
+    }
+
+
+@media only screen and (max-width: 224px) {
+    .footer-container{
+        margin-top:1700px;
+    }    
+
+}

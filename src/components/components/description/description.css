@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+.container{
+  height: 285px;
+  width: auto;
+  background: #68BED9;
+  border-radius:0 0 69px 69px;
+  padding: 69px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.line-1{
+  
+    position: relative;
+    top: 38%;  
+    width: 24em;
+    margin: 10px 0 0 103px;
+    border-right: 2px solid #68BED9;
+    font-size: 90px;
+    font-family:'Montserrat', sans-serif;
+    text-align: left;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 2s steps(30) 0.5s normal both,
+             blinkTextCursor 500ms steps(30) 5.2;
+
+}
+
+.anim-typewriter-2{
+  animation: typewriter-2 2s steps(30) 2.5s normal both, 
+              blinkTextCursor 500ms steps(30) 9.2;
+}
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width:10.5em;}
+}
+
+@keyframes typewriter-2{
+  from{width: 0;}
+  to{width:9.5em;}
+}
+
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color:  rgba(255,255,255,.75);}
+}
+
+
+
+@media only screen and (max-width: 1121px) {
+  @keyframes typewriter{
+    from{width: 0;}
+  to{width:10.5em;}
+  }
+  
+  .line-1{
+    font-size: 70px;
+    
+  }
+
+}
+
+@media only screen and (max-width: 911px) {
+  @keyframes typewriter{
+    from{width: 0;}
+  to{width:10.5em;}
+  }
+  
+  .line-1{
+    font-size: 50px; 
+  }
+
+}
+
+
+@media only screen and (max-width: 701px) {
+  .line-1{
+    font-size:30px;
+    margin: 10px 0 0 0px;
+  }
+}
+
+
+@media only screen and (max-width: 405px) {
+  .line-1{
+    font-size:20px;
+    margin: 10px 0 0 0px;
+  }
+}
+
+

@@ -1,0 +1,43 @@
+.background{
+    padding: 20px;
+    background-color: #F5F5F5;
+    height:1074px;
+    width: 90%;
+    display: flex;
+    margin-left: 3.5%;
+}
+li { color: #68BED9; }
+
+li p {
+    color: black;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight:00;
+    font-size: 18px;
+    line-height: 22px;
+
+}
+
+.skills-list{
+    padding-top: 10%;
+    width: 345px;
+    height: 302px;
+    margin-top: 20px;
+    margin-right: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    line-height: 30px;
+}
+
+
+.Title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+}
+
+

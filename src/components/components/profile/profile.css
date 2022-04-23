@@ -1,0 +1,88 @@
+.profile-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.profile-part-1{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 56.5%;
+    height: 374px;
+    padding:10px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.profile-pic{
+    margin:31px;
+    height:300px;
+    border-radius: 50%;
+    border: 4px solid #68BED9;
+}
+
+.name-text{
+    font-family: 'Montserrat';
+    font-size: 32px;
+    margin-bottom: 0px;
+}
+
+
+.profile-part-2{
+    margin-top: 30px;
+    margin-right: 40px;
+
+    width: 28.4%;
+    height: 374px;
+    padding:10px;
+    background: #FFFFFF;
+    border-radius: 10px;
+
+}
+
+
+.button, .button-blue, .button-blue-signup{
+    background-color:               #FFFFFF;
+    box-shadow:                     0px 0px 9px rgba(0, 0, 0, 0.35);
+    border:                         0px solid white;
+    border-radius:                  20px;
+    color:                        #808080;
+    cursor:                         pointer;
+    font-size:                      15px;
+    font-family:                    'Montserrat', sans-serif;
+    height:                         50px;
+    margin:                         20px 20px 0 0;
+    width:                          150px;
+    
+}
+
+.description-part{
+    margin-left: 30px;
+}
+
+.sm-button{
+
+    font-family: 'Montserrat', sans-serif;
+    height:52px;
+    width:150px;
+    background-color: transparent;
+    border: 2px solid #68BED9;
+    box-sizing: border-box;
+    border-radius: 14px;
+    margin-top:10px;
+}
+.button-blue{
+    background-color: #68BED9;
+    color:white;
+}
+
+
+@media screen and (max-width:1301px){
+    .button, .button-blue{
+        margin-left: 50px;
+    }
+    .one{
+        margin-top: 62px;
+    }
+}

@@ -1,0 +1,100 @@
+.button-shape{
+    height:55px;
+    width: 150px;
+    border-radius: 20px;
+    border: 0px solid black;
+    font-size: 23px;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.35);
+}
+
+
+.pricing-container{
+    height:530px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-text{
+    width:70%;
+}
+
+.free, .pro, .pro-plus{
+    height:470px;
+    width:360px;
+    background: #FCFCFC;
+    border: 1px solid #68BED9;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 12px #68BED9;
+    border-radius: 26px;
+}
+
+.pro{
+    margin-left: 60px;
+    margin-right:60px;
+}
+
+.green{
+    background-color:#76DFB3;
+    color:white;
+}
+
+.cyan{
+    background-color: #68BED9;
+    color:white;
+}
+
+.blue{
+    background-color: #00AEEF;
+    color:white;
+}
+
+/*for computers*/
+@media only screen and (max-width: 970px) {
+    .pricing-container{
+        
+        display: block;
+        justify-content: center;
+    }
+    .free, .pro, .pro-plus{
+        width: 90%;
+        height:600px;
+        margin-top:30px;
+    }
+    .pro{
+        margin-left:0px;
+        margin-right:0px;
+    }
+    
+    h1{
+        margin-top:80px;
+        font-size: 50px;
+    }
+    h3{
+        font-size: 30px;
+        
+    }
+
+}
+
+/*for tablets and */
+
+@media only screen and (max-width: 659px) {
+    .free, .pro, .pro-plus{
+        width:90%;
+        height:700px;
+    }
+
+}
+
+
+@media only screen and (max-width: 224px) {
+    .free, .pro, .pro-plus{
+        width: 95%;
+        height: 700px;
+    }
+
+
+
+}
+
