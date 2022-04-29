@@ -14,6 +14,7 @@
 .Navbar-white{
     
     position: fixed;
+    padding:20px 10px 0px 5px;
     z-index: 3;
     display: flex;
     justify-content: space-between;
@@ -63,7 +64,14 @@
     margin-left: 69px;
 }
 
-.button, .button-blue, .button-blue-signup{
+.button-text{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color:grey;
+    text-decoration: none;
+}
+
+.button-white, .buttone-blue, .buttone-blue-signup{
     text-align: center;
     cursor: pointer;
     margin:20px;
@@ -77,7 +85,7 @@
     
 }
 
-.button{
+.button-white{
     color:grey;
 }
 
@@ -95,7 +103,7 @@
 }
 
 
-.button-blue, .button-blue-signup{
+.buttone-blue, .buttone-blue-signup{
     background-color: #006C8E;
     color: white;    
 }
@@ -114,23 +122,14 @@
     margin-left: 200px;
 }
 
-.button-blue:hover, .button-blue-signup:hover{
+.buttone-blue:hover, .buttone-blue-signup:hover{
     animation: change-back 4s;
     animation-iteration-count: infinite;
 }  
 
-.button:hover{
+.button-white:hover{
     animation: change 4s;
     animation-iteration-count: infinite;
-}
-
-@keyframes rotation{
-    0% {
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(90deg);
-    }
 }
 
 

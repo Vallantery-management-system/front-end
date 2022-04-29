@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {useHistory, Link} from 'react-router-dom';
-import './Login.css';
+import '../styles/Login.css';
 import axios from 'axios'
 
 const BACKEND_URL = 'https://vms-ayb.herokuapp.com'
@@ -83,15 +83,15 @@ export const Login = () => {
             <div className='div1'>
                 <h2>Sign In</h2>
                 <form onSubmit={LogIn}>
-                    <input required type="mail" placeholder='Username' value={login} onChange={(e) => {
+                    <input className = 'main-input' required type="mail" placeholder='Username' value={login} onChange={(e) => {
                         setLogin(e.target.value);
                     }}/>
-                    <input required type="password" placeholder='Password' value={passw} onChange={(e) => {
+                    <input className = 'main-input' required type="password" placeholder='Password' value={passw} onChange={(e) => {
                         setPassw(e.target.value);
                     }}/>
                     {wrong && <p id='wrong'>Wrong username or password</p>}
                     <Link to='/forgot' id='forgot'>Forgot password?</Link>
-                    <button className='button' type="submit">Continue</button>
+                    <Link to ='/home' id = 'signup'><button className='buttons' type="submit">Continue</button></Link>
                 </form>
                 <p className='signup'>New User? <Link to='/signup' id='signup'>Sign up</Link></p>
             </div>

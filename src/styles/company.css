@@ -1,0 +1,146 @@
+body{
+    background: #FFFFFF;
+}
+
+.container-1{
+    padding:21px;
+    display: flex;
+}
+
+.description{
+    padding:21px;
+    width:69%;
+    height:1100px;
+
+}
+
+.description-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.description-text-2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 17px;
+    width: 80%;
+    text-align: left;
+
+
+}
+
+.icons{
+    height: 40px;
+    margin:20px
+}
+
+.cover-image{
+    width: 700px;
+}
+
+.title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1px;
+}
+
+i{
+    color:#68BED9
+
+}
+
+.requirements{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+}
+
+.comp-contacts{
+    padding:21px;
+    width:31%;
+    display: block;
+}
+
+.apply{
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-top: 60px;
+    width: 332px;
+    height: 180px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.applyBtn{
+    width: 159px;
+    height: 58px;
+    background: #68BED9;
+    border: 0px #fff;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.35);
+    border-radius: 19px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.prof-pic{
+    border-radius: 50%;
+}
+
+.company-contacts{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 332px;
+    height: 640px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.apply-popup{
+    padding:20px;
+    width: 832px;
+    height: 543px;
+    margin-left: 20%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.34);
+    border-radius: 15px;
+}
+
+.why-me{
+    margin-left: 100px;
+    font-family: 'Montserrat';
+}
+.apply-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+}
+
+.textarea-active{
+    display: none;
+}
+
+.textarea{
+    width: 670px;
+    height: 265px;
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    box-sizing: border-box;
+    border-radius: 15px;
+}

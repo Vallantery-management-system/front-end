@@ -9,7 +9,7 @@ export const Home = () =>  {
   var i = 27;
 
   return (
-    <div>
+    <div className = 'bg'>
       <Nav />
       <h1 className = {'headline'}>Available tasks</h1>
       <Categories />

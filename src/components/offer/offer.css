@@ -12,7 +12,17 @@
     display: flex;
 }
 
-.blue{
+.links:visited{
+    color:#005B77;
+}
+
+.title-part{
+    font-size:32px;
+    line-height: 0px;
+}
+
+
+.blu{
     color:  #006C8E
 }
 
@@ -31,7 +41,9 @@
 }
 
 .text-part{
-    margin: 6% 10%;
+    margin: 6% 30px;
+    position: relative;
+    left: 30px;
     width:80%;    
     font-family: 'Montserrat', sans-serif;
     

@@ -42,14 +42,11 @@
     font-family:                        'Montserrat', sans-serif;
     color:                             #404040;
     font-weight: 600px;
+    width:70%;
 
 }
-.large-text{
-    font-size:                          47px;
-    margin-left:                        35%;
-}
 
-a{
+.mylink{
     font-family:                        'Montserrat', sans-serif;
     color:                              #006C8E;
     font-size:                          25px;
@@ -101,13 +98,9 @@ a{
     font-family: 'Roboto Mono', monospace;
     margin-left: 20px;
 }
+
 .longer{
     margin-left: 78px;
-
-}
-.small-text{
-    font-size:                          27px;
-    margin-left:                        31%;
 
 }
 
@@ -123,7 +116,7 @@ a{
 
 .scroll {    
     margin:                             2%;
-    height:                             82vh;
+    height:                             41vh;
     overflow-x:                         scroll;
     overflow-y:                         hidden;
     white-space:                        nowrap;
@@ -134,7 +127,7 @@ a{
 
   @media screen and (max-width:1180px){
     .scroll{
-        height:                         90vh;
+        height:                         45vh;
     }
 }
 

@@ -92,20 +92,20 @@ const cal = () =>{
                             <li className = {'days'} align = 'left' >{Line5}</li>
                         </ul>
                     </div>
-
-
+                </div>
+                <div align ='left'>
                     <li className={"list-item"}>                    
                         <div className ={'top-line'}>                       
                             <h6>Yerevan, Arabkir</h6>
                             <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
                         </div>  
                             <p className ={'headline'}>Banvor apeh struk karochi</p>
-                        <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
+                        <div align ='left' className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
                                 elit. Morbi malesuada malesuada tortor a turpis  <br></br>
                                 aliquam ut. Mauris mollis donec vivamus sem
                         </div> 
                         <br></br>
-                        <a href = 'www.youtube.com'> Learn more →</a>
+                        <a className = 'mylink' href = 'www.youtube.com'> Learn more →</a>
                     </li>
                     <li className={"list-item"}>                    
                         <div className ={'top-line'}>                       
@@ -225,138 +225,7 @@ const cal = () =>{
                         <a href = 'www.youtube.com'> Learn more →</a>
                     </li>
                 </div>
-                <div>
-                    <li className={"list-item"}>                    
-                            <div className ={'top-line'}>                       
-                                <h6>Yerevan, Arabkir</h6>
-                                <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                            </div>  
-                                <p className ={'headline'}>Banvor apeh struk karochi</p>
-                            <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                    elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                    aliquam ut. Mauris mollis donec vivamus sem
-                            </div> 
-                            <br></br>
-                            <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
-                    <li className={"list-item"}>                    
-                            <div className ={'top-line'}>                       
-                                <h6>Yerevan, Arabkir</h6>
-                                <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                            </div>  
-                                <p className ={'headline'}>Banvor apeh struk karochi</p>
-                            <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                    elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                    aliquam ut. Mauris mollis donec vivamus sem
-                            </div> 
-                            <br></br>
-                            <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
-                    <li className={"list-item"}>                    
-                            <div className ={'top-line'}>                       
-                                <h6>Yerevan, Arabkir</h6>
-                                <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                            </div>  
-                                <p className ={'headline'}>Banvor apeh struk karochi</p>
-                            <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                    elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                    aliquam ut. Mauris mollis donec vivamus sem
-                            </div> 
-                            <br></br>
-                            <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
-                    <li className={"list-item"}>                    
-                            <div className ={'top-line'}>                       
-                                <h6>Yerevan, Arabkir</h6>
-                                <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                            </div>  
-                                <p className ={'headline'}>Banvor apeh struk karochi</p>
-                            <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                    elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                    aliquam ut. Mauris mollis donec vivamus sem
-                            </div> 
-                            <br></br>
-                            <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
-                    <li className={"list-item"}>                    
-                            <div className ={'top-line'}>                       
-                                <h6>Yerevan, Arabkir</h6>
-                                <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                            </div>  
-                                <p className ={'headline'}>Banvor apeh struk karochi</p>
-                            <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                    elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                    aliquam ut. Mauris mollis donec vivamus sem
-                            </div> 
-                            <br></br>
-                            <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
-                    <li className={"list-item"}>                    
-                            <div className ={'top-line'}>                       
-                                <h6>Yerevan, Arabkir</h6>
-                                <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                            </div>  
-                                <p className ={'headline'}>Banvor apeh struk karochi</p>
-                            <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                    elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                    aliquam ut. Mauris mollis donec vivamus sem
-                            </div> 
-                            <br></br>
-                            <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
-                    <li className={"list-item"}>                    
-                            <div className ={'top-line'}>                       
-                                <h6>Yerevan, Arabkir</h6>
-                                <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                            </div>  
-                                <p className ={'headline'}>Banvor apeh struk karochi</p>
-                            <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                    elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                    aliquam ut. Mauris mollis donec vivamus sem
-                            </div> 
-                            <br></br>
-                            <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
-                    <li className={"list-item"}>                    
-                            <div className ={'top-line'}>                       
-                                <h6>Yerevan, Arabkir</h6>
-                                <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                            </div>  
-                                <p className ={'headline'}>Banvor apeh struk karochi</p>
-                            <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                    elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                    aliquam ut. Mauris mollis donec vivamus sem
-                            </div> 
-                            <br></br>
-                            <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
-                    <li className={"list-item"}>                    
-                            <div className ={'top-line'}>                       
-                                <h6>Yerevan, Arabkir</h6>
-                                <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                            </div>  
-                                <p className ={'headline'}>Banvor apeh struk karochi</p>
-                            <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                    elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                    aliquam ut. Mauris mollis donec vivamus sem
-                            </div> 
-                            <br></br>
-                            <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
-                    <li className={"list-item"}>                    
-                            <div className ={'top-line'}>                       
-                                <h6>Yerevan, Arabkir</h6>
-                                <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                            </div>  
-                                <p className ={'headline'}>Banvor apeh struk karochi</p>
-                            <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                    elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                    aliquam ut. Mauris mollis donec vivamus sem
-                            </div> 
-                            <br></br>
-                            <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
-                </div>
+                
             </div>
         </div>
     )
