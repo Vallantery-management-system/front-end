@@ -3,6 +3,7 @@ import colored from './logo-colored.svg';
 import React, {useState} from 'react';
 import "./Navbar.css";
 import { useEffect } from "react";
+import {Link} from 'react-router-dom';
 
 function Navbar() {
 const [navbar, setnavbar] = useState(false);
@@ -38,8 +39,8 @@ window.addEventListener('scroll', changeBackground );
                     <option value="German">Deu</option>
                     <option value="Armenian">Arm</option>
                 </select>
-                    <button className = {'button-blue-signup'}>Sign up</button>
-                    <button className = {'button'}>  Sign in</button>
+                    <Link to='/signup'><button className = {'button-blue-signup'}>Sign up</button></Link>
+                    <Link to='/login'><button className = {'button'}>  Sign in</button></Link>
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@ import { Login } from './pages/Login';
 import { SignUp } from './pages/Signup';
 import { ForgotPassw } from './pages/ForgotPassw';
 import {ResetPassword} from "./pages/ResetPassword";
-import {Landing} from './pages/Landing';
+import {Landing} from './pages/landing';
 
 export function App() {
   return (
