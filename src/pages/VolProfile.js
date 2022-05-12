@@ -3,7 +3,7 @@ import '../styles/volprofile.css'
 import Nav from '../components/header/header'
 import Profile from '../components/profile/profile';
 import Event from '../components/event/event';
-import Footer from '../components/footer/footer'
+import {Footer} from '../components/footer/footer'
 
 export const VolProfile = () => {
     return (
@@ -21,28 +21,29 @@ export const VolProfile = () => {
               </div>  {/*60%*/}
               <div className = 'skills'>
                 <div className ='skills-list'>
-                  <div align ='cernter'>
-                    Hard skills
-                  </div>
+                <h2>Hard skills</h2>
+                  <div align ='left'>
                   <ul>
-                    <li><p>pro struk</p></li>
-                    <li><p>paxat master</p></li>
-                    <li><p>tarva hambal</p></li>
-                    <li><p>amenasev</p></li>
-                    <li><p>poler srbelu champion</p></li>
+                    <li className ='li'><p>pro struk</p></li>
+                    <li className ='li'><p>paxat master</p></li>
+                    <li className ='li'><p>tarva hambal</p></li>
+                    <li className ='li'><p>amenasev</p></li>
+                    <li className ='li'><p>poler srbelu champion</p></li>
                   </ul>
+                  </div>
                 </div>
                 <div className ='skills-list'>
-                  <div align ='cernter'>
-                    Soft skills
-                  </div>
+                <h2>Soft skills</h2>
+
+                  <div align ='left'> 
                   <ul>
-                    <li><p>pro struk</p></li>
-                    <li><p>paxat master</p></li>
-                    <li><p>tarva hambal</p></li>
-                    <li><p>amenasev</p></li>
-                    <li><p>poler srbelu champion</p></li>
+                    <li className ='li'><p>pro struk</p></li>
+                    <li className ='li'><p>paxat master</p></li>
+                    <li className ='li'><p>tarva hambal</p></li>
+                    <li className ='li'><p>amenasev</p></li>
+                    <li className ='li'><p>poler srbelu champion</p></li>
                   </ul>
+                  </div>
                 </div>
 
               </div>  {/*40%*/}

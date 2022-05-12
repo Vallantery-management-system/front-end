@@ -19,7 +19,28 @@
     "Contacts"          : "Contacts",
     "Rights_reserved"   : "©Tous droits réservés",
     "FAQ"               : "QFP",
-    "Privacy"           : "Politique de confidentialité"
+    "Privacy"           : "Politique de confidentialité",
+
+
+    "Start_journey"     : "Commencez votre voyage",
+    "Continue"          : "Continuez",
+    "Name"              : "Nom",
+    "Surname"           : "Nom de famille",
+    "Phone"             : "Téléphoner",
+    "Email"             : "E-mail",
+    "Password"          : "Mot de passe",
+    "City"              : "Ville",
+
+
+
+    "___Err_messages"   : "ici seront affichés tous les messages d'erreur pour la traduction",
+    "Upper_error"       : "Le mot de passe est trop faible. Essayez d'inclure des lettres MAJUSCULES",
+    "Number_error"      : "Le mot de passe est trop faible. Essayez d'inclure des chiffres",
+    "Symbol_error"      : "le mot de passe est trop faible. Essayez d'inclure des symboles comme !@#$%^&*?>|",
+    "Shnik_error"       : "L'e-mail doit contenir '@'. Assurez-vous de saisir une adresse e-mail valide.",
+    "mising_dot"        : "L'e-mail ne contient pas non plus de '.' ou son emplacement n'est pas valide. Assurez-vous de saisir une adresse e-mail valide.",
+    "Surname_error"     : "Le nom de famille doit comporter plus de 3 caractères et ne pas inclure d'espaces. Veuillez vous assurer d'entrer un nom de famille valide",
+    "Name_error"        : "Le nom doit comporter plus de 3 caractères et ne pas inclure d'espaces. Assurez-vous d'entrer un nom valide"
 }
 
 

@@ -2,6 +2,10 @@ body{
     background: #FFFFFF;
 }
 
+.darker{
+    background: rgb(71, 71, 71);
+}
+
 .container-1{
     padding:21px;
     display: flex;
@@ -20,6 +24,10 @@ body{
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
+}
+
+.dark{
+    color:white;
 }
 
 .description-text-2{
@@ -49,6 +57,16 @@ body{
     line-height: 1px;
 }
 
+.title-dark{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1px;
+    color:white
+}
+
+
 i{
     color:#68BED9
 
@@ -61,6 +79,10 @@ i{
     font-size: 20px;
     line-height: 24px;
 
+}
+
+.no-visible{
+    display:none;
 }
 
 .comp-contacts{
@@ -79,6 +101,14 @@ i{
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
 }
+
+.faded{
+    color: #FFFFFF;
+    background: rgb(71, 71, 71);
+
+}
+
+
 
 .applyBtn{
     width: 159px;
@@ -110,20 +140,43 @@ i{
     border-radius: 10px;
 }
 
+.company-contacts-faded{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 332px;
+    height: 640px;
+    background: rgb(71, 71, 71);
+    color: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
 .apply-popup{
+    position: relative;
     padding:20px;
-    width: 832px;
+    width: 55%;
     height: 543px;
     margin-left: 20%;
     background: #FFFFFF;
     box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.34);
     border-radius: 15px;
+    animation: go-to-top 1s;
+    animation-fill-mode: forwards;  
 }
 
-.why-me{
-    margin-left: 100px;
-    font-family: 'Montserrat';
+
+@keyframes go-to-top{
+    0%{
+        bottom:0px;
+    }
+    80%{
+        bottom: 1230px;
+    }
+    100%{
+        bottom:1200px;
+    }
 }
+
 .apply-text{
     font-family: 'Montserrat';
     font-style: normal;
@@ -137,10 +190,12 @@ i{
 }
 
 .textarea{
-    width: 670px;
+    width: 90%;
     height: 265px;
     background: #FFFFFF;
     border: 1px solid #C7C7C7;
     box-sizing: border-box;
     border-radius: 15px;
+    padding:15px;
+    resize: none;
 }

@@ -38,10 +38,9 @@
     font-size: 29px;
 }
 
-.description{   
+.descriptione{   
     font-family:                        'Montserrat', sans-serif;
     color:                             #404040;
-    font-weight: 600px;
     width:70%;
 
 }
@@ -116,7 +115,7 @@
 
 .scroll {    
     margin:                             2%;
-    height:                             41vh;
+    height:                             90vh;
     overflow-x:                         scroll;
     overflow-y:                         hidden;
     white-space:                        nowrap;
@@ -127,7 +126,7 @@
 
   @media screen and (max-width:1180px){
     .scroll{
-        height:                         45vh;
+        height:                         90vh;
     }
 }
 

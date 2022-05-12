@@ -1,8 +1,6 @@
 import React from 'react';
 import "./profile.css";
 import image from './profiiepic.png';
-import telegram from './telegram.svg';
-import {Link} from 'react-router-dom';
 
 
 
@@ -11,7 +9,7 @@ function profile() {
         <div>
             <div className ={'profile-wrapper'}>
                 <div className={'profile-part-1'}>
-                    <img className = 'profile-pic' src = {image}></img>
+                    <img alt ='' className = 'profile-pic' src = {image}></img>
                     <div className = 'description-part'>
                         <div align ='left'>
                             <p className ='name-text'>Struk surname</p>

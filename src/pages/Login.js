@@ -1,5 +1,6 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import {useHistory, Link} from 'react-router-dom';
+import Logo from '../components/Navbar/logo-colored.svg'
 import '../styles/Login.css';
 import axios from 'axios'
 
@@ -9,6 +10,10 @@ const userLoginRequest = async (email, password) => {
     try {
         const response = await axios.post(`${BACKEND_URL}/auth/login`, {email, password})
 
+        if(response.data.isNotVerified) {
+            alert('Please verify your email')
+            return;
+        }
         const access_token = response.data.access_token
 
         localStorage.setItem('token', access_token)
@@ -24,7 +29,7 @@ export const Login = () => {
     const [login, setLogin] = useState("");
     const [passw, setPassw] = useState("");
     const [wrong, setWrong] = useState(false);
-    const users = [
+    {/*const users = [
         {
             username: "12345",
             password: "qwerty",
@@ -49,7 +54,7 @@ export const Login = () => {
             surname: "no",
             phone: "077777777"
         }
-    ];
+    ];*/}
 
     const LogIn = async (event) => {
         if (login !== "" && passw !== "") {
@@ -57,7 +62,7 @@ export const Login = () => {
             const isLoggedInSuccess = await userLoginRequest(login, passw)
 
             if (isLoggedInSuccess) {
-                history.push('/profile');
+                history.push('/home');
             }
             // const num = users.filter((user) => {
             //     return user.username === login && user.password === passw;
@@ -73,7 +78,7 @@ export const Login = () => {
 
     return (
         <div>
-            <img className='img' src='/Images/Capture.jpg' alt=''/>
+            <img className='img' src={Logo} alt=''/>
             <div className='r1'></div>
             <div className='r2'></div>
             <div className='r3'></div>

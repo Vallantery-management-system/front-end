@@ -1,6 +1,6 @@
 import React from 'react';
 import cLogo from './colored-logo.svg';
-import './cLogo.css';
+import './header.css';
 import avatar from './profpic.png'
 import {Link} from 'react-router-dom';
 

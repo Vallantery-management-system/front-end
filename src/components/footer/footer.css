@@ -31,23 +31,3 @@ hr{
     border: #0084AE 1px solid;
 }
 
-@media only screen and (max-width: 970px) {
-    .footer-container{
-        margin-top:1700px;
-    }
-} 
-
-
-.volunteer, .company{
-      width: 90%;
-      padding-top: 90px;
-
-    }
-
-
-@media only screen and (max-width: 224px) {
-    .footer-container{
-        margin-top:1700px;
-    }    
-
-}

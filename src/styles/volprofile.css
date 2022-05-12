@@ -8,13 +8,13 @@
     margin-left: 3.5%;
     margin-bottom: 40px;
 }
-li { color: #68BED9; }
+.li { color: #68BED9; }
 
 .wrap{
     background: #fff;
 }
 
-li p {
+.li p {
     color: black;
     font-family: 'Montserrat';
     font-style: normal;

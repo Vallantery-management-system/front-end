@@ -1,16 +1,11 @@
 #signUp {
-    position: absolute;
-    top: 0.5px;
-    left: 94px;
+    line-height: 10px;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
 }
 
 #start{
-    position: absolute;
-    top: 63px;
-    left: 85px;
     color: #767676;
     font-style: normal;
     font-weight: 600;
@@ -30,62 +25,25 @@
     border-radius: 26px;
 }
 
-/*select {
-    margin-right: 10px;
-    border-radius: 8px;
-    width: 232px;
-    height: 15px;
-    padding: 12px 15px;
-    border: 1.6px solid rgb(216, 210, 210);
-    height: fit-content;
-    cursor: pointer;
-}*/
 
 .input-div{
     display: block;
     justify-content: center;
 }
 
-option{
-    border: none;
-    text-decoration: none;
-}
-
-#input1 {
-    position: absolute;
-    top: 133px;
-}
-
-#input2 {
-    position: absolute;
-    top: 194px;
-}
-
-#input3 {
-    position: absolute;
-    top: 255px;
-}
-
-#input4 {
-    position: absolute;
-    top: 316px;
-}
-
-#input5{
-    position: absolute;
-    top: 377px;
-}
-
-#input6{
-    position: absolute;
-    top: 438px;
-}  
-
-.input {
-    position: relative;
-    right: 40px;
+.select-field{
+    border: 1.6px solid rgb(216, 210, 210);
     border-radius: 8px;
-    width: 200px;
+    width: 60%;
+    height: 40px;
+
+}
+
+
+.input-field{
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 50%;
     height: 15px;
     padding: 12px 15px;
     border: 1.6px solid rgb(216, 210, 210);
@@ -191,3 +149,4 @@ option{
     border-radius: 54px;
     transform: rotate(21.19deg);
 }
+
