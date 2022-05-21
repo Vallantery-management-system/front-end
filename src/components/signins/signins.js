@@ -1,6 +1,6 @@
 import React from 'react'
-import './signins.css'
 import {Link} from 'react-router-dom';
+import './signins.css'
 import { useTranslation} from "react-i18next";
 
 export const Signins = () => {

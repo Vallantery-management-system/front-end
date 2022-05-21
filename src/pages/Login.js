@@ -29,32 +29,6 @@ export const Login = () => {
     const [login, setLogin] = useState("");
     const [passw, setPassw] = useState("");
     const [wrong, setWrong] = useState(false);
-    {/*const users = [
-        {
-            username: "12345",
-            password: "qwerty",
-            id: 1,
-            name: "harut",
-            surname: "harutyunyan",
-            phone: "055555555"
-        },
-        {
-            username: "barev",
-            password: "dzez",
-            id: 2,
-            name: "ayo",
-            surname: "voch",
-            phone: "099999999"
-        },
-        {
-            username: "ok",
-            password: "ok",
-            id: 3,
-            name: "yes",
-            surname: "no",
-            phone: "077777777"
-        }
-    ];*/}
 
     const LogIn = async (event) => {
         if (login !== "" && passw !== "") {
@@ -64,9 +38,7 @@ export const Login = () => {
             if (isLoggedInSuccess) {
                 history.push('/home');
             }
-            // const num = users.filter((user) => {
-            //     return user.username === login && user.password === passw;
-            // });
+
             if (!isLoggedInSuccess) {
                 console.error("Wrong username or password");
                 setWrong(true);

@@ -28,7 +28,7 @@ export function App() {
           </Route>
           <Route path="/login">
               <Login />
-          </Route>   
+          </Route>
           <Route path = '/company'>
               <Company />
           </Route>

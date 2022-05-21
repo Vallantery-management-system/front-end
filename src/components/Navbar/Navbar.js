@@ -17,7 +17,7 @@ function Navbar() {
         var langValue = language.value;
         document.querySelector('html').lang = langValue;
         i18next.changeLanguage(langValue);
-    } 
+    }
 
     const changeBackground = (e) =>{
         const winScroll =
@@ -54,7 +54,7 @@ function Navbar() {
 
                     </select>
 
-                    <Link className = 'button-text' to = '/signup'> 
+                    <Link className = 'button-text' to = '/signup'>
                         <button className = {'buttone-blue-signup'}>{t('Sign_up')}</button>
                     </Link>
                     <Link className = 'button-text' to = '/login'>
