@@ -8,9 +8,10 @@
 
 
 .backlines{
+  position: relative;
   height:             467px;
   margin-bottom:      -150px;
-  z-index:            1;
+  z-index:            -1;
 }
 
 .centered-text{
@@ -43,9 +44,11 @@ i{
 }
 
 .lines{
+  position: relative;
   height:             467px;
   margin-left:        5%;
   margin-top:         6%;
+  z-index:            -1;
 }
 
 .we-give-volunteers{

@@ -28,10 +28,11 @@ export function App() {
           </Route>
           <Route path="/login">
               <Login />
+          </Route>   
+          <Route path = '/post/:id'>
+            <Company />
           </Route>
-          <Route path = '/company'>
-              <Company />
-          </Route>
+        
           <Route path="/signup">
               <SignUp/>
           </Route>

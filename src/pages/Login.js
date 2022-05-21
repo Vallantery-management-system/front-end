@@ -31,8 +31,8 @@ export const Login = () => {
     const [wrong, setWrong] = useState(false);
 
     const LogIn = async (event) => {
+        event.preventDefault();
         if (login !== "" && passw !== "") {
-            event.preventDefault();
             const isLoggedInSuccess = await userLoginRequest(login, passw)
 
             if (isLoggedInSuccess) {
@@ -68,7 +68,7 @@ export const Login = () => {
                     }}/>
                     {wrong && <p id='wrong'>Wrong username or password</p>}
                     <Link to='/forgot' id='forgot'>Forgot password?</Link>
-                    <Link to ='/home' id = 'signup'><button className='buttons' type="submit">Continue</button></Link>
+                    <button className='buttons' type="submit">Continue</button>
                 </form>
                 <p className='signup'>New User? <Link to='/signup' id='signup'>Sign up</Link></p>
             </div>

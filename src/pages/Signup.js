@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import '../styles/Signup.css';
 import axios from "axios";
 import Logo from '../components/Navbar/logo-colored.svg'
+import lines from '../images/doubleLines.svg'
 import { useTranslation} from "react-i18next";
-import {Link} from 'react-router-dom'
+import {Link, useHistory} from 'react-router-dom'
 
 // endpoint POST:/auth/signup
 
@@ -102,14 +103,15 @@ const Checkup = () => {
 
 
 const validateSignUpData = (data) => {
-    return true
+    return nameCheckup(data.name) && surnameCheckup(data.surname) && mailCheckup() && passwordCheckup()
 
 }
 
 
 export const SignUp = () => {
     const { t } = useTranslation();
-
+    const history = useHistory();
+    
     const [name, setName] = useState("");
     const [surname, setSurname] = useState("");
     const [email, setEmail] = useState("");
@@ -117,18 +119,26 @@ export const SignUp = () => {
     const [city, setCity] = useState("");
     const [password, setPassword] = useState("");
     const [error, setErrors] = useState("");
+    const [gender, setGender] = useState("");
+    const [birthday, setBirthday] = useState('')
 
-    const userSignupRequest = async () => {
+    const userSignupRequest = async (e) => {
+        e.preventDefault();
         try { 
-            const data = {name, surname, email, phone, city, password}
+            const data = {name, surname, email, phone, city, password, birth: birthday, gender}
             if(!validateSignUpData(data)) {
                 setErrors('Invalid Data')   
                 return;
             }
 
-            await axios.post('/auth/signup', data, {
+            const response = await axios.post('/auth/signup', data, {
                 baseURL: BACKEND_URL
             })
+
+            if(response.status === 200) {
+                localStorage.setItem('token', response.data.access_token)
+                history.push('/home')
+            }
 
             alert('Welcome to the VMS systems, to keep using our system please verify your email.')
         }catch (err) {
@@ -137,56 +147,67 @@ export const SignUp = () => {
     }
 
     return (
-        <div>
-        <img className='img' src={Logo} alt=''/>
-        <div>
-            <div id='r1'></div>
-            <div id='r2'></div>
-            <div id='r3'></div>
-        </div>
-        <div>
-            <div id='r4'></div>
-            <div id='r5'></div>
-            <div id='r6'></div>
-        </div>
-        <div className='form'>
-            <div>
-                <h2 id='signUp'>{t('Sign_up')}</h2>
-                <h4 id='start'>{t("Start_journey")}</h4>
+        <div align ='center'>
+            <div align = 'left'>
+                <img className ='signup-logo' alt ='logo' src ={Logo}/>
             </div>
-            <div className = 'input-div'>
-                <form onSubmit = {userSignupRequest} >
-                    <input className='input-field'  id = 'name' required value = {name} type='text' placeholder={t('Name')} onChange={(e) => {
-                        setName(e.target.value);
-                    }}/>
-                    <input className='input-field'  id = 'surname' required value = {surname} type='text' placeholder={t('Surname')} onChange={(e) => {
-                        setSurname(e.target.value);
-                    }}/>
-                    <input className='input-field'  id = 'phone' required value = {phone} placeholder={t('Phone')} type="number" onChange={(e) => {
-                        setPhone(e.target.value);
-                    }}/>
-                    <input className='input-field'  id = 'email' required value = {email} type='email' placeholder={t('Email')} onChange={(e) => {
-                        setEmail(e.target.value);
-                    }}/>
-                    <input className='input-field'  id = 'password'required value = {password} type='password' placeholder={t('Password')} onChange={(e) => {
-                        setPassword(e.target.value);
-                    }}/>
-                    <select className = 'select-field' name="City" value = {t('city')} required onChange={(e) => {
-                        setCity(e.target.value);
-                    }}>
-                        <option selected disabled hidden>City</option>
-                        <option value="Yerevan">Yerevan</option>
-                        <option value="Gyumri">Gyumri</option>
-                        <option value="Vanadzor">Vanadzor</option>
-                        <option value="Dilijan">Dilijan</option>
-                        <option value="Chambarak">Chambarak</option>
-                    </select>
-                    <Link to = '/home'>
-                        <button type='submit' className='button1' onClick = {Checkup}>{t("Continue")}</button>
-                    </Link>
-                </form>
+            <div className = 'form-wrapper' align ='center'>
+                <div className='form'>
+                    <form onSubmit = {userSignupRequest} >
+                        <div>
+                            <h2>{t('Sign_up')}</h2>
+                            <h4>{t("Start_journey")}</h4>
+                        </div>
+                        <input className='input-field'  id = 'name'     required value = {name} type='text' placeholder={t('Name')} onChange={(e) => {
+                            setName(e.target.value);
+                        }}/>
+                        <input className='input-field'  id = 'surname'  required value = {surname} type='text' placeholder={t('Surname')} onChange={(e) => {
+                            setSurname(e.target.value);
+                        }}/>
+
+                        <input className='input-field'  id = 'birthday' required type="date" name="birthday" value = {birthday} onChange={(e) => {
+                            setBirthday(e.target.value);
+                        }}/>
+                        
+                        <input className='input-field'  id = 'phone'    required value = {phone} placeholder={t('Phone')} type="number" onChange={(e) => {
+                            setPhone(e.target.value);
+                        }}/>
+                        <input className='input-field'  id = 'email'    required value = {email} type='email' placeholder={t('Email')} onChange={(e) => {
+                            setEmail(e.target.value);
+                        }}/>
+                        <input className='input-field'  id = 'password' required value = {password} type='password' placeholder={t('Password')} onChange={(e) => {
+                            setPassword(e.target.value);
+                        }}/>
+                        <select className='select-field'  id = 'gender' required value = {gender} type='gender' placeholder='Gender' onChange={(e) => {
+                            setGender(e.target.value);
+                        }}>
+                            <option value = 'Male'>Male</option>
+                            <option value = 'Female'>Female</option>
+                            <option value = 'Other'>Other</option>
+                            <option value = 'PnS'>Prefer not to say</option>
+                        </select>
+                        
+                        <select className = 'select-field' name="City"  required value = {t('city')}  onChange={(e) => {
+                            setCity(e.target.value);
+                        }}>
+                            <option value="Abovyan">Abovyan</option>
+                            <option value="Alaverdi">Alaverdi</option>
+                            <option value="Ararat">Ararat</option>
+                            <option value="Chambarak">Chambarak</option>
+                            <option value="Dilijan">Dilijan</option>
+                            <option value="Gyumri">Gyumri</option>
+                            <option value="Goris">Goris</option>
+                            <option value="Hrazdan">Hrazdan</option>
+                            <option value="Vanadzor">Vanadzor</option>
+                            <option value="Yerevan">Yerevan</option>
+                            <option value="Meghri">Meghri</option>
+                        </select>
+                        
+                            <br/>
+                            <button type='submit' className='button1' onClick = {Checkup}>{t("Continue")}</button>
+                    </form>
+                </div>
             </div>
-        </div>
         </div>
     )
 }

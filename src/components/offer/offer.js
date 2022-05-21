@@ -22,7 +22,7 @@ function Offer(props) {
                         <h3>{post.description}
                         </h3>
                         <h3>volunteering experience <i className ={'blu'}>required</i></h3>
-                        <h2><Link className = 'links' to = {'/company'}>Learn more→</Link></h2>
+                        <h2><Link className = 'links' to = {`/post/${post.id}`}>Learn more→</Link></h2>
                     </div>
                     
                 </div>

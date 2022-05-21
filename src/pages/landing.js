@@ -43,7 +43,7 @@ export const Landing = () => {
         </div>
         
         <div align = "left">
-          <img alt= '' className = {'lines'} src = {lines}></img>
+          <img alt= '' className = 'lines' src = {lines}></img>
         </div>
           
         <div align = "center">
@@ -51,7 +51,7 @@ export const Landing = () => {
         </div>
         
         <div align='right'>
-          <img alt = ''  className = {'backlines'} src = {backlines}></img>
+          <img alt = ''  className = 'backlines' src = {backlines}></img>
           <Signins />
         </div>
         
