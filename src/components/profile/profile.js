@@ -1,46 +1,64 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import "./profile.css";
 import image from './profiiepic.png';
+import axios from 'axios';
 
+const BACKEND_URL = 'https://vms-ayb.herokuapp.com'
 
-
-function profile() {
-    return (
-        <div>
-            <div className ={'profile-wrapper'}>
-                <div className={'profile-part-1'}>
-                    <img alt ='' className = 'profile-pic' src = {image}></img>
-                    <div className = 'description-part'>
-                        <div align ='left'>
-                            <p className ='name-text'>Struk surname</p>
-                            <h4>Male</h4>
-                        </div>
-                        <div align ='left'>
-                            <p className = 'personal-info'>18 years old</p>
-                            <p className = 'personal-info'>Kentron, Yerevan</p>
-                        </div>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-
-                        <button className = {'button-blue'}>Approve</button>
-                        <button className = {'buttone'}>Decline</button>
-                    </div>
-                    
-                </div>
-                <div align = 'center' className={'profile-part-2'}>
-                    <p className ='name-text'>Contacts</p>
-                    <br></br>
-                    <br></br>
-                    <p className = 'personal-info'>Tel: +37499 123456</p>
-                    <p className = 'personal-info'>E-mail: anunazganun@...</p>
-                    <br></br>
-                    <button className = 'sm-button one'>Telegram</button><br></br>
-                    <button className = 'sm-button'>Messenger</button>
-                </div>
-            </div>
-        </div>
-    )
+const profilePageRequest = async () => {
+  try {
+    const response = await axios.post(`${BACKEND_URL}/profile`)
+    return response.data;
+  } catch (e) {
+    throw e;
+  }
 }
 
-export default profile
+function Profile() {
+  const [userState, setUserState] = useState({})
+  useEffect(() => {
+    profilePageRequest().then((data) => setUserState(data))
+  }, [])
+
+  const userImage = userState.avatar ?? image;
+
+  return (
+    <div>
+      <div className={'profile-wrapper'}>
+        <div className={'profile-part-1'}>
+          <img className='profile-pic' src={userImage}></img>
+          <div className='description-part'>
+            <div>
+              <p className='name-text'>{userState.name} {userState.surname}</p>
+              <p className='name-text'>{userState.username}</p>
+              <p className='name-text'>{userState.email}</p>
+              <p className='name-text'>{userState.tel}</p>
+
+              <h4>{userState.gender}</h4>
+            </div>
+            <div>
+              <h2>{userState.city}</h2>
+              <h2>{userState.hobby}</h2>
+              <h2>{userState.skills}</h2>
+              <h2>{userState.why}</h2>
+              <h2>{userState.profit}</h2>
+            </div>
+            <button className={'button-blue'}>Approve</button>
+            <button className={'button'}>Decline</button>
+          </div>
+
+        </div>
+        <div align='center' className={'profile-part-2'}>
+          <p className='name-text'>Contacts</p>
+          <h2>Tel: +37499 123456</h2>
+          <h2>E-mail: anunazganun@...</h2>
+          <button className='sm-button one'>Telegram</button>
+          <br></br>
+          <button className='sm-button'>Messenger</button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Profile

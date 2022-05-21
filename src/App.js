@@ -30,8 +30,9 @@ export function App() {
               <Login />
           </Route>   
           <Route path = '/post/:id'>
-              <Company />
+            <Company />
           </Route>
+        
           <Route path="/signup">
               <SignUp/>
           </Route>
