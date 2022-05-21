@@ -1,15 +1,6 @@
 import React from 'react'
-import {useState} from 'react';
 import './categories.css'
-import filter from './filter.png';
 function categories() {
-
-    var clickCount = 0;
-    const filters = () =>{
-        clickCount+=1;
-        console.log(clickCount);
-    }
-
     return (
         <div>
             <div align = 'center' className = {'top'}>

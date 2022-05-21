@@ -1,6 +1,7 @@
 import React from 'react'
 import {useState} from 'react';
 import './vacancies.css'
+import {Link} from 'react-router-dom';
 
 
 function Vacancies() {
@@ -8,18 +9,18 @@ function Vacancies() {
 const [calendar, setCalendar] = useState(false);
 var monthList = ['January', 'February', 'March', 'April', 'May', 'June', "july", 'August', 'September', 'October', 'November', 'December'];
 var daysInMonth = ['31', '28', '31', '30', '31', '30', '31', '31', '30', '31', '30', '31'];
-var weekdayList = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday',];
+//var weekdayList = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday',];
 var clicks = 0;
-var today = new Date;
+var today = new Date();
 //gives which month in number is now    ex. March
 var monthNumber = today.getMonth();
 //day of the month is now    ex. 16
-var thisDay = today.getDate();
+//var thisDay = today.getDate();
 //weekday               ex. Monday
-var thisDayOfWeek = today.getDay();
+//var thisDayOfWeek = today.getDay();
 var RealMonth = monthList[monthNumber];
 var dayLimit = daysInMonth[monthNumber];
-var DayOfWeek = weekdayList[thisDayOfWeek];
+//var DayOfWeek = weekdayList[thisDayOfWeek];
 
 //generating the calendar in js
 var Line1 = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ];
@@ -92,20 +93,22 @@ const cal = () =>{
                             <li className = {'days'} align = 'left' >{Line5}</li>
                         </ul>
                     </div>
-
-
+                </div>
+                <div align ='left'>
                     <li className={"list-item"}>                    
                         <div className ={'top-line'}>                       
                             <h6>Yerevan, Arabkir</h6>
                             <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
                         </div>  
                             <p className ={'headline'}>Banvor apeh struk karochi</p>
-                        <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
+                        <div align ='left' className = {'descriptione'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
                                 elit. Morbi malesuada malesuada tortor a turpis  <br></br>
                                 aliquam ut. Mauris mollis donec vivamus sem
                         </div> 
                         <br></br>
-                        <a href = 'www.youtube.com'> Learn more →</a>
+                        <div>
+                            <Link className = 'mylink' to = '/company'> Learn more →</Link>
+                        </div>
                     </li>
                     <li className={"list-item"}>                    
                         <div className ={'top-line'}>                       
@@ -113,12 +116,14 @@ const cal = () =>{
                             <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
                         </div>  
                             <p className ={'headline'}>Banvor apeh struk karochi</p>
-                        <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
+                        <div align ='left' className = {'descriptione'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
                                 elit. Morbi malesuada malesuada tortor a turpis  <br></br>
                                 aliquam ut. Mauris mollis donec vivamus sem
                         </div> 
                         <br></br>
-                        <a href = 'www.youtube.com'> Learn more →</a>
+                        <div>
+                            <Link className = 'mylink' to = '/company'> Learn more →</Link>
+                        </div>
                     </li>
                     <li className={"list-item"}>                    
                         <div className ={'top-line'}>                       
@@ -126,235 +131,211 @@ const cal = () =>{
                             <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
                         </div>  
                             <p className ={'headline'}>Banvor apeh struk karochi</p>
-                        <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
+                        <div align ='left' className = {'descriptione'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
                                 elit. Morbi malesuada malesuada tortor a turpis  <br></br>
                                 aliquam ut. Mauris mollis donec vivamus sem
                         </div> 
                         <br></br>
-                        <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
+                        <div>
+                            <Link className = 'mylink' to = '/company'> Learn more →</Link>
+                        </div>
+                    </li>                    
                     <li className={"list-item"}>                    
                         <div className ={'top-line'}>                       
                             <h6>Yerevan, Arabkir</h6>
                             <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
                         </div>  
                             <p className ={'headline'}>Banvor apeh struk karochi</p>
-                        <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
+                        <div align ='left' className = {'descriptione'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
                                 elit. Morbi malesuada malesuada tortor a turpis  <br></br>
                                 aliquam ut. Mauris mollis donec vivamus sem
                         </div> 
                         <br></br>
-                        <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
+                        <div>
+                            <Link className = 'mylink' to = '/company'> Learn more →</Link>
+                        </div>
+                    </li>                    
                     <li className={"list-item"}>                    
                         <div className ={'top-line'}>                       
                             <h6>Yerevan, Arabkir</h6>
                             <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
                         </div>  
                             <p className ={'headline'}>Banvor apeh struk karochi</p>
-                        <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
+                        <div align ='left' className = {'descriptione'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
                                 elit. Morbi malesuada malesuada tortor a turpis  <br></br>
                                 aliquam ut. Mauris mollis donec vivamus sem
                         </div> 
                         <br></br>
-                        <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
+                        <div>
+                            <Link className = 'mylink' to = '/company'> Learn more →</Link>
+                        </div>
+                    </li>                    
                     <li className={"list-item"}>                    
                         <div className ={'top-line'}>                       
                             <h6>Yerevan, Arabkir</h6>
                             <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
                         </div>  
                             <p className ={'headline'}>Banvor apeh struk karochi</p>
-                        <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
+                        <div align ='left' className = {'descriptione'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
                                 elit. Morbi malesuada malesuada tortor a turpis  <br></br>
                                 aliquam ut. Mauris mollis donec vivamus sem
                         </div> 
                         <br></br>
-                        <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
+                        <div>
+                            <Link className = 'mylink' to = '/company'> Learn more →</Link>
+                        </div>
+                    </li>                    
                     <li className={"list-item"}>                    
                         <div className ={'top-line'}>                       
                             <h6>Yerevan, Arabkir</h6>
                             <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
                         </div>  
                             <p className ={'headline'}>Banvor apeh struk karochi</p>
-                        <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
+                        <div align ='left' className = {'descriptione'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
                                 elit. Morbi malesuada malesuada tortor a turpis  <br></br>
                                 aliquam ut. Mauris mollis donec vivamus sem
                         </div> 
                         <br></br>
-                        <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
+                        <div>
+                            <Link className = 'mylink' to = '/company'> Learn more →</Link>
+                        </div>
+                    </li>                    
                     <li className={"list-item"}>                    
                         <div className ={'top-line'}>                       
                             <h6>Yerevan, Arabkir</h6>
                             <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
                         </div>  
                             <p className ={'headline'}>Banvor apeh struk karochi</p>
-                        <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
+                        <div align ='left' className = {'descriptione'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
                                 elit. Morbi malesuada malesuada tortor a turpis  <br></br>
                                 aliquam ut. Mauris mollis donec vivamus sem
                         </div> 
                         <br></br>
-                        <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
-                    <li className={"list-item"}>                    
-                        <div className ={'top-line'}>                       
-                            <h6>Yerevan, Arabkir</h6>
-                            <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                        </div>  
-                            <p className ={'headline'}>Banvor apeh struk karochi</p>
-                        <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                aliquam ut. Mauris mollis donec vivamus sem
-                        </div> 
-                        <br></br>
-                        <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
-                    <li className={"list-item"}>                    
-                        <div className ={'top-line'}>                       
-                            <h6>Yerevan, Arabkir</h6>
-                            <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                        </div>  
-                            <p className ={'headline'}>Banvor apeh struk karochi</p>
-                        <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                aliquam ut. Mauris mollis donec vivamus sem
-                        </div> 
-                        <br></br>
-                        <a href = 'www.youtube.com'> Learn more →</a>
+                        <div>
+                            <Link className = 'mylink' to = '/company'> Learn more →</Link>
+                        </div>
                     </li>
                 </div>
-                <div>
+                <div align ='left'>
                     <li className={"list-item"}>                    
-                            <div className ={'top-line'}>                       
-                                <h6>Yerevan, Arabkir</h6>
-                                <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                            </div>  
-                                <p className ={'headline'}>Banvor apeh struk karochi</p>
-                            <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                    elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                    aliquam ut. Mauris mollis donec vivamus sem
-                            </div> 
-                            <br></br>
-                            <a href = 'www.youtube.com'> Learn more →</a>
+                        <div className ={'top-line'}>                       
+                            <h6>Yerevan, Arabkir</h6>
+                            <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
+                        </div>  
+                            <p className ={'headline'}>Banvor apeh struk karochi</p>
+                        <div align ='left' className = {'descriptione'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
+                                elit. Morbi malesuada malesuada tortor a turpis  <br></br>
+                                aliquam ut. Mauris mollis donec vivamus sem
+                        </div> 
+                        <br></br>
+                        <div>
+                            <Link className = 'mylink' to = '/company'> Learn more →</Link>
+                        </div>
                     </li>
                     <li className={"list-item"}>                    
-                            <div className ={'top-line'}>                       
-                                <h6>Yerevan, Arabkir</h6>
-                                <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                            </div>  
-                                <p className ={'headline'}>Banvor apeh struk karochi</p>
-                            <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                    elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                    aliquam ut. Mauris mollis donec vivamus sem
-                            </div> 
-                            <br></br>
-                            <a href = 'www.youtube.com'> Learn more →</a>
+                        <div className ={'top-line'}>                       
+                            <h6>Yerevan, Arabkir</h6>
+                            <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
+                        </div>  
+                            <p className ={'headline'}>Banvor apeh struk karochi</p>
+                        <div align ='left' className = {'descriptione'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
+                                elit. Morbi malesuada malesuada tortor a turpis  <br></br>
+                                aliquam ut. Mauris mollis donec vivamus sem
+                        </div> 
+                        <br></br>
+                        <div>
+                            <Link className = 'mylink' to = '/company'> Learn more →</Link>
+                        </div>
                     </li>
                     <li className={"list-item"}>                    
-                            <div className ={'top-line'}>                       
-                                <h6>Yerevan, Arabkir</h6>
-                                <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                            </div>  
-                                <p className ={'headline'}>Banvor apeh struk karochi</p>
-                            <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                    elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                    aliquam ut. Mauris mollis donec vivamus sem
-                            </div> 
-                            <br></br>
-                            <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
+                        <div className ={'top-line'}>                       
+                            <h6>Yerevan, Arabkir</h6>
+                            <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
+                        </div>  
+                            <p className ={'headline'}>Banvor apeh struk karochi</p>
+                        <div align ='left' className = {'descriptione'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
+                                elit. Morbi malesuada malesuada tortor a turpis  <br></br>
+                                aliquam ut. Mauris mollis donec vivamus sem
+                        </div> 
+                        <br></br>
+                        <div>
+                            <Link className = 'mylink' to = '/company'> Learn more →</Link>
+                        </div>
+                    </li>                    
                     <li className={"list-item"}>                    
-                            <div className ={'top-line'}>                       
-                                <h6>Yerevan, Arabkir</h6>
-                                <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                            </div>  
-                                <p className ={'headline'}>Banvor apeh struk karochi</p>
-                            <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                    elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                    aliquam ut. Mauris mollis donec vivamus sem
-                            </div> 
-                            <br></br>
-                            <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
+                        <div className ={'top-line'}>                       
+                            <h6>Yerevan, Arabkir</h6>
+                            <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
+                        </div>  
+                            <p className ={'headline'}>Banvor apeh struk karochi</p>
+                        <div align ='left' className = {'descriptione'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
+                                elit. Morbi malesuada malesuada tortor a turpis  <br></br>
+                                aliquam ut. Mauris mollis donec vivamus sem
+                        </div> 
+                        <br></br>
+                        <div>
+                            <Link className = 'mylink' to = '/company'> Learn more →</Link>
+                        </div>
+                    </li>                    
                     <li className={"list-item"}>                    
-                            <div className ={'top-line'}>                       
-                                <h6>Yerevan, Arabkir</h6>
-                                <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                            </div>  
-                                <p className ={'headline'}>Banvor apeh struk karochi</p>
-                            <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                    elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                    aliquam ut. Mauris mollis donec vivamus sem
-                            </div> 
-                            <br></br>
-                            <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
+                        <div className ={'top-line'}>                       
+                            <h6>Yerevan, Arabkir</h6>
+                            <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
+                        </div>  
+                            <p className ={'headline'}>Banvor apeh struk karochi</p>
+                        <div align ='left' className = {'descriptione'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
+                                elit. Morbi malesuada malesuada tortor a turpis  <br></br>
+                                aliquam ut. Mauris mollis donec vivamus sem
+                        </div> 
+                        <br></br>
+                        <div>
+                            <Link className = 'mylink' to = '/company'> Learn more →</Link>
+                        </div>
+                    </li>                    
                     <li className={"list-item"}>                    
-                            <div className ={'top-line'}>                       
-                                <h6>Yerevan, Arabkir</h6>
-                                <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                            </div>  
-                                <p className ={'headline'}>Banvor apeh struk karochi</p>
-                            <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                    elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                    aliquam ut. Mauris mollis donec vivamus sem
-                            </div> 
-                            <br></br>
-                            <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
+                        <div className ={'top-line'}>                       
+                            <h6>Yerevan, Arabkir</h6>
+                            <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
+                        </div>  
+                            <p className ={'headline'}>Banvor apeh struk karochi</p>
+                        <div align ='left' className = {'descriptione'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
+                                elit. Morbi malesuada malesuada tortor a turpis  <br></br>
+                                aliquam ut. Mauris mollis donec vivamus sem
+                        </div> 
+                        <br></br>
+                        <div>
+                            <Link className = 'mylink' to = '/company'> Learn more →</Link>
+                        </div>
+                    </li>                    
                     <li className={"list-item"}>                    
-                            <div className ={'top-line'}>                       
-                                <h6>Yerevan, Arabkir</h6>
-                                <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                            </div>  
-                                <p className ={'headline'}>Banvor apeh struk karochi</p>
-                            <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                    elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                    aliquam ut. Mauris mollis donec vivamus sem
-                            </div> 
-                            <br></br>
-                            <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
+                        <div className ={'top-line'}>                       
+                            <h6>Yerevan, Arabkir</h6>
+                            <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
+                        </div>  
+                            <p className ={'headline'}>Banvor apeh struk karochi</p>
+                        <div align ='left' className = {'descriptione'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
+                                elit. Morbi malesuada malesuada tortor a turpis  <br></br>
+                                aliquam ut. Mauris mollis donec vivamus sem
+                        </div> 
+                        <br></br>
+                        <div>
+                            <Link className = 'mylink' to = '/company'> Learn more →</Link>
+                        </div>
+                    </li>                    
                     <li className={"list-item"}>                    
-                            <div className ={'top-line'}>                       
-                                <h6>Yerevan, Arabkir</h6>
-                                <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                            </div>  
-                                <p className ={'headline'}>Banvor apeh struk karochi</p>
-                            <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                    elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                    aliquam ut. Mauris mollis donec vivamus sem
-                            </div> 
-                            <br></br>
-                            <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
-                    <li className={"list-item"}>                    
-                            <div className ={'top-line'}>                       
-                                <h6>Yerevan, Arabkir</h6>
-                                <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                            </div>  
-                                <p className ={'headline'}>Banvor apeh struk karochi</p>
-                            <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                    elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                    aliquam ut. Mauris mollis donec vivamus sem
-                            </div> 
-                            <br></br>
-                            <a href = 'www.youtube.com'> Learn more →</a>
-                    </li>
-                    <li className={"list-item"}>                    
-                            <div className ={'top-line'}>                       
-                                <h6>Yerevan, Arabkir</h6>
-                                <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
-                            </div>  
-                                <p className ={'headline'}>Banvor apeh struk karochi</p>
-                            <div className = {'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
-                                    elit. Morbi malesuada malesuada tortor a turpis  <br></br>
-                                    aliquam ut. Mauris mollis donec vivamus sem
-                            </div> 
-                            <br></br>
-                            <a href = 'www.youtube.com'> Learn more →</a>
+                        <div className ={'top-line'}>                       
+                            <h6>Yerevan, Arabkir</h6>
+                            <h6 className ={'date-margin'} onClick = {cal} >14 Mar - 16 Mar</h6>
+                        </div>  
+                            <p className ={'headline'}>Banvor apeh struk karochi</p>
+                        <div align ='left' className = {'descriptione'}>Lorem ipsum dolor sit amet, consectetur adipiscing  <br></br>
+                                elit. Morbi malesuada malesuada tortor a turpis  <br></br>
+                                aliquam ut. Mauris mollis donec vivamus sem
+                        </div> 
+                        <br></br>
+                        <div>
+                            <Link className = 'mylink' to = '/company'> Learn more →</Link>
+                        </div>
                     </li>
                 </div>
             </div>

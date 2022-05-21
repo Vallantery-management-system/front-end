@@ -1,7 +1,5 @@
 .flex-container{
     display: flex;
-
-    position: relative;
 }
 
 #inf{
@@ -9,20 +7,22 @@
 }
 
 .volunteer{
-    height:420px;
-    width: 45%;
-    background-color:#68BED9;
-    border-radius:0 50px 50px 0;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 40px;
+  height:510px;
+  width: 45%;
+  background-color:#68BED9;
+  border-radius:0 50px 50px 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
   
 .company{
-    height:420px;
-    width: 45%;
-    background-color:#68BED9;
-    border-radius: 50px 0 0 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+  padding-top: 40px;
+  height:510px;
+  width: 45%;
+  background-color:#68BED9;
+  border-radius: 50px 0 0 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 .empty{
   height:420px;
@@ -31,19 +31,19 @@
 
 .centered-text-1{
     width: 70%;
-    font-size: 30px;
+    font-size: 27px;
     margin: 50px;
     font-weight: bold;
-    min-height:145px;
+    min-height:225px;
     text-align: left;
 }
 
 .centered-text-2{
   width: 70%;
-  font-size: 30px;
+  font-size: 27px;
   margin: 50px;
   font-weight: bold;
-  min-height:145px;
+  min-height:225px;
   text-align: right;
 }
   

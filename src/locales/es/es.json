@@ -1,0 +1,68 @@
+{
+    "Sign_in"           : "Registrarse",
+    "Sign_up"           : "Regístrate",
+    "Slogan_1"          : "Por cada voluntario",
+    "Slogan_2"          : "todas las oportunidades",
+    "We_give"           : "Ofrecemos a los voluntarios un lugar para experimentar",
+    "We_created"        : "Hemos creado una plataforma de networking donde los voluntarios y las empresas comerciales pueden interactuar directamente, y ambos pueden beneficiarse de este sitio web eligiendo el mejor trabajo/voluntario para ellos. Hacemos su trabajo más fácil",
+    "Volunteer_text"    : "Si quieres ayudar a otros y eres una persona capacitada, adelante, únete a nuestro grupo de voluntarios",
+    "Company_text"      : "Si necesita asistencia o desea planificar un evento, haga clic aquí y encuentre a sus voluntarios desde nuestra plataforma",
+    "Recent_Act"        : "Actividades recientes",
+    "Tasks"             : "Ver qué tareas están disponibles actualmente",
+    "Pricing"           : "Nuestros precios",
+    "Free"              : "Gratis",
+    "Pro"               : "Pro",
+    "Business"          : "Negocio",
+    "Basic_package"     : "Este paquete es perfecto para probar todas nuestras funciones e invitar hasta 10 voluntarios a su evento",
+    "Pro_package"       : "Este paquete es perfecto para organizar eventos medianos e invitar hasta 20 voluntarios a su evento",
+    "Business_package"  : "Este paquete es perfecto para organizar eventos a gran escala e invitar hasta 30 voluntarios a su evento",
+    "Contacts"          : "Contactos",
+    "Rights_reserved"   : "©Todos los derechos reservados",
+    "FAQ"               : "PREGUNTAS MÁS FRECUENTES",
+    "Privacy"           : "Política de privacidad",
+
+
+    
+    "Start_journey"     : "Empieza tu viaje",
+    "Continue"          : "Seguir",
+    "Name"              : "Nombre",
+    "Surname"           : "Apellido",
+    "Phone"             : "Teléfono",
+    "Email"             : "Correo electrónico",
+    "Password"          : "Clave",
+    "City"              : "Ciudad",
+
+
+
+    "___Err_messages"   : "aquí se mostrarán todos los mensajes de error para la traducción",
+    "Upper_error"       : "La contraseña es demasiado débil. Intenta incluir letras en MAYÚSCULAS",
+    "Number_error"      : "La contraseña es demasiado débil. Intenta incluir números",
+    "Symbol_error"      : "La contraseña es demasiado débil. Intente incluir símbolos como !@#$%^&*?>|",
+    "Shnik_error"       : "El correo electrónico debe contener '@'. Asegúrate de ingresar una dirección de correo electrónico válida.",
+    "mising_dot"        : "El correo electrónico no contiene '.' o su ubicación no es válida. Asegúrate de ingresar una dirección de correo electrónico válida.",
+    "Surname_error"     : "El Apellido debe tener más de 3 caracteres y no incluir espacios. Asegúrese de ingresar un apellido válido",
+    "Name_error"        : "El nombre debe tener más de 3 caracteres y no incluir espacios. Por favor asegúrese de ingresar un nombre válido"
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

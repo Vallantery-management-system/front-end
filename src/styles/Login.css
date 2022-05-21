@@ -25,7 +25,7 @@ h2 {
     margin-bottom: none;
 }
 
-input {
+.main-input {
     margin-right: 10px;
     border-radius: 8px;
     width: 200px;
@@ -42,7 +42,7 @@ input {
     top: 15px;
 }
 
-input:focus {
+.main-input:focus {
     border: 1.6px solid rgb(216, 210, 210);
     box-shadow: inset 0 0 3px rgb(216, 210, 210);
     outline: none;
@@ -53,7 +53,7 @@ input[type = 'mail']{
     margin-bottom: 10px;
 }
 
-.button {
+.buttons {
     background-color: #5dc4e4;
     border-radius: 10px;
     border: none;
@@ -67,8 +67,27 @@ input[type = 'mail']{
     left: 100px;
 }
 
+.buttons:hover{
+    animation: change-ba 4s;
+    animation-iteration-count: infinite;
+}  
+
+@keyframes change-ba{
+    0%  {background-color: #5dc4e4;
+        color: white;}
+    50% {background-color: white;
+        color:grey;
+        border:0px solid white;
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.35);
+        border-radius: 10px;}
+    100% {background-color:#5dc4e4;
+        color: white;}
+}
+
 #signup{
     color: #0f87ac;
+    font-size: 15px;
+
 }
 
 #signup:link{

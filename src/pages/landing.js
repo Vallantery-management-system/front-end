@@ -1,48 +1,73 @@
-import React from 'react';
+import axios from 'axios';
 import '../styles/App.css';
-import lines from '../images/lines.png';
-import backlines from '../images/backlines.png';
+import React, {useEffect} from 'react';
+import lines from '../images/lines.svg';
+import { useHistory } from 'react-router';
+import backlines from '../images/backlines.svg';
 import Navbar from '../components/Navbar/Navbar.js';
+import {Footer} from '../components/footer/footer.js';
+import {Pricing} from '../components/pricings/pricing';
+import {Signins} from '../components/signins/signins.js';
+import { useTranslation } from "react-i18next";
 import Description from '../components/description/description.js';
-import Signins from '../components/signins/signins.js';
-import Vacancies from '../components/recent-vacancies/vacancies.js'
-import Pricings from '../components/pricings/pricing';
-import Footer from '../components/footer/footer.js';
+import Vacancies from '../components/recent-vacancies/vacancies.js';
+
+
+const BACKEND_URL = 'https://vms-ayb.herokuapp.com'
 
 export const Landing = () => {
+  const { t } = useTranslation();
+
+  const history = useHistory();
+  const href = window.location.href;
+  // let url = 'https://vsm.com/?token=axasxmnhaxvnaaxnaxnasxasngx'
+  // const splitedArray = ['https://vsm.com/?', "axasxasxaxax"];
+  useEffect(() => {
+    if(href.includes('token')) {
+      const token = href.split('token=')[1];
+      axios.post('/verify', {token}, {baseURL: BACKEND_URL}).then((res) => {
+        history.push('/signin')
+        alert("You're all done, now you can sign in to our system." )
+      })
+    }  
+  }, [href])
+
   return (
       <div className="App">
         <Navbar ></Navbar>
-        <Description></Description> 
-          <div align = "center"> 
 
-            <p className ={'we-give-volunteers'}>We give volunteers a place to experience.</p>
-            </div>
-        <div align = "center"> 
-        </div>
-          <img className = {'lines'} src = {lines}></img> 
+        <Description></Description>
+
         <div align = "center">
-          <h1 id ={"info"} className={'info'}>We've created a networking platform where <i>volunteers</i> and      
-          <i> business</i> companies may interact directly, and both can benefit 
-          from this website by choosing the best work / volunteer for them. 
-          We make your job easier.</h1>
+          <p className ={'we-give-volunteers'}>{t('We_give')}</p>
         </div>
+        
+        <div align = "left">
+          <img alt= '' className = {'lines'} src = {lines}></img>
+        </div>
+          
+        <div align = "center">
+          <h1 id ={"info"} className={'info'}>{t('We_created')}</h1>
+        </div>
+        
         <div align='right'>
-          <img  className = {'backlines'} src = {backlines}></img> 
+          <img alt = ''  className = {'backlines'} src = {backlines}></img>
           <Signins />
         </div>
+        
         <div>
           <div align ='center'>
-            <p className ={'we-give-volunteers'}>Recent Activities</p> 
-            <h2>See what tasks are currently available</h2>
-          </div>  
+            <p className ={'we-give-volunteers'}>{t('Recent_Act')}</p>
+            <h2>{t('Tasks')}</h2>
+          </div>
           <Vacancies />
         </div>
+        
         <div align = 'center'>
-          <h1 className = {'away'}>Our Pricing</h1>
-          
-          <Pricings />
+          <h1 className = {'away'}>{t('Pricing')}</h1>
+          <Pricing />
         </div>
+        
         <Footer />
       </div>
   );

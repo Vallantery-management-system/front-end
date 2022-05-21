@@ -19,5 +19,28 @@
     "Contacts"          : "Kontakte",
     "Rights_reserved"   : "©Alle Rechte vorbehalten",
     "FAQ"               : "HGF",
-    "Privacy"           : "Datenschutz-Bestimmungen"
+    "Privacy"           : "Datenschutz-Bestimmungen",
+
+
+
+    
+    "Start_journey"     : "Beginne deine Reise",
+    "Continue"          : "fortsetzen",
+    "Name"              : "Name",
+    "Surname"           : "Familien-oder Nachname",
+    "Phone"             : "Telefon",
+    "Email"             : "Email",
+    "Password"          : "Passwort",
+    "City"              : "Stadt",
+
+
+
+    "___Err_messages"   : "hier werden alle Fehlermeldungen zur Übersetzung angezeigt",
+    "Upper_error"       : "Passwort ist zu schwach. Versuchen Sie, GROSSBUCHSTABEN einzuschließen",
+    "Number_error"      : "Passwort ist zu schwach. Versuchen Sie, Zahlen einzufügen",
+    "Symbol_error"      : "Passwort ist zu schwach. Versuchen Sie, Symbole wie !@#$%^&*?>|",
+    "Shnik_error"       : "Die E-Mail muss ein '@' enthalten. Bitte stellen Sie sicher, dass Sie eine gültige E-Mail-Adresse eingeben.",
+    "mising_dot"        : "Die E-Mail enthält entweder kein '.' oder sein Standort ist ungültig. Bitte stellen Sie sicher, dass Sie eine gültige E-Mail-Adresse eingeben.",
+    "Surname_error"     : "Der Nachname muss länger als 3 Zeichen sein und darf keine Leerzeichen enthalten. Bitte stellen Sie sicher, dass Sie einen gültigen Nachnamen eingeben",
+    "Name_error"        : "Der Name muss länger als 3 Zeichen sein und darf keine Leerzeichen enthalten. Bitte stellen Sie sicher, dass Sie einen gültigen Namen eingeben."
 }
