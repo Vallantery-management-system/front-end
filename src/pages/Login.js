@@ -59,9 +59,7 @@ export const Login = () => {
             if (isLoggedInSuccess) {
                 history.push('/profile');
             }
-            // const num = users.filter((user) => {
-            //     return user.username === login && user.password === passw;
-            // });
+            
             if (!isLoggedInSuccess) {
                 console.error("Wrong username or password");
                 setWrong(true);

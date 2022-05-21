@@ -1,24 +1,48 @@
 import React from 'react';
 import "./profile.css";
 import image from './profiiepic.png';
-import telegram from './telegram.svg';
+import axios from 'axios';
+import { useEffect, useState } from 'react/cjs/react.production.min';
 
+const BACKEND_URL = 'https://vms-ayb.herokuapp.com'
 
+const profilePageRequest = async => {
+    try {
+        const response = await axios.post(`${BACKEND_URL}/profile`)
+        return response.data;
+    } catch (e) {
+        throw e;
+    }
+}
 
 function profile() {
+    const [userState, setUserState] = useState({})
+    useEffect(() => {
+        profilePageRequest().then((data) => setUserState(data) )
+    }, []) 
+    
+    
+    const userImage = userState.avatar ?? image;
     return (
         <div>
             <div className ={'profile-wrapper'}>
                 <div className={'profile-part-1'}>
-                    <img className = 'profile-pic' src = {image}></img>
+                    <img className = 'profile-pic' src = {userImage}></img>
                     <div className = 'description-part'>
                         <div>
-                            <p className ='name-text'>Struk surname</p>
-                            <h4>Male</h4>
+                            <p className ='name-text'>{userState.name} {userState.surname}</p>
+                            <p className ='name-text'>{userState.username}</p>
+                            <p className ='name-text'>{userState.email}</p>
+                            <p className ='name-text'>{userState.tel}</p>
+
+                            <h4>{userState.gender}</h4>
                         </div>
                         <div>
-                            <h2>18 years old</h2>
-                            <h2>Kentron, Yerevan</h2>
+                            <h2>{userState.city}</h2>
+                            <h2>{userState.hobby}</h2>
+                            <h2>{userState.skills}</h2>
+                            <h2>{userState.why}</h2>
+                            <h2>{userState.profit}</h2>
                         </div>
                         <button className = {'button-blue'}>Approve</button>
                         <button className = {'button'}>Decline</button>
