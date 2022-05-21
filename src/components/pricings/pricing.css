@@ -61,7 +61,8 @@
 /*for computers*/
 @media only screen and (max-width: 970px) {
     .pricing-container{
-        height:1890px;
+        min-height:1890px;
+        max-height: 2200px;
         display: block;
         justify-content: center;
     }

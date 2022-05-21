@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
+import axios from 'axios'
 import Nav from '../components/header/header';
 import {Footer} from '../components/footer/footer';
 import '../styles/company.css';
@@ -6,16 +7,34 @@ import Gulag from '../images/gulag.jpeg'
 import Shef from '../images/Slaveholder.jpeg'
 import Facebook from '../components/footer/facebook-icon.png'
 import Instagram from '../components/footer/instagram-icon.png'
+import { useHistory, useParams } from 'react-router';
 
 var clicks = 0;
+const BACKEND_URL = 'https://vms-ayb.herokuapp.com';
+
+
+const postRequest = async (id) => {
+      const response = await axios.get(`${BACKEND_URL}/posts/${id}`)
+        return response.data
+}
+
 
 export const Company = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const data = useParams();
+  console.log(data)
+  useEffect(() => {
+    postRequest(data.id)
+  },[data.id])
 
+
+
+  const [isOpen, setIsOpen] = useState(false);
   const printSomething = () =>{
+    
     clicks++;
     if(clicks%2 === 0){
       setIsOpen(true);
+      window.scrollTo(450, 400);
     }
     else{
       setIsOpen(false);
@@ -24,6 +43,7 @@ export const Company = () => {
   }
 
     return (
+
         <div className = {isOpen? 'darker' :''}>
             <Nav/>
             <div className = 'container-1'>

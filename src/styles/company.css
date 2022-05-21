@@ -4,6 +4,9 @@ body{
 
 .darker{
     background: rgb(71, 71, 71);
+    overflow-y: hidden;
+    height: 1649px;
+
 }
 
 .container-1{

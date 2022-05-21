@@ -29,7 +29,7 @@ export function App() {
           <Route path="/login">
               <Login />
           </Route>   
-          <Route path = '/company'>
+          <Route path = '/post/:id'>
               <Company />
           </Route>
           <Route path="/signup">
